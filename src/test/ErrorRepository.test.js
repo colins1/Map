@@ -1,13 +1,13 @@
 import ErrorRepository from '../js/ErrorRepository';
 
 test('testing', () => {
-  const Repo = new ErrorRepository();
-  const code = '1';
-  expect(Repo.translate(code)).toBe('Чтото не правельно');
+  const Error = new ErrorRepository();
+  const code = 1;
+  expect(Error.translate(code)).toBe('Чтото не правельно');
 });
 
 test('testing', () => {
-  const Repo = new ErrorRepository();
-  const code = '16';
-  expect(Repo.translate(code)).toBe('Unknown error');
+  const Error = new ErrorRepository();
+  const code = 7;
+  expect(Error.translate(code)).toBe('Unknown error');
 });
